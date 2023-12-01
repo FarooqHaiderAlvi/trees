@@ -1,0 +1,6 @@
+This is main repo and will contain 
+binary trees
+binary search trees
+traversals 
+binary tree avl
+binary tree rotations
