@@ -1,0 +1,21 @@
+height starting from zero
+so if height is zero then no of nodes is 1
+
+no of nodes = (2^h)-1
+
+height of tree=log(n+1) with base 2
+
+if there are n nodes then there must be n-1
+edges
+
+A tree is an acyclic graph.
+
+There are two main types of tree traversal.
+
+breath first search which is also known as
+level order traversal.
+and second is depth first search which further has three types
+lvr , lrv , vlr
+
+
+for breath first we use queue and for dfs we use stack in its three types
