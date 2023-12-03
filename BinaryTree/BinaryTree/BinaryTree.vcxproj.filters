@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BinaryTree.cpp">
+    <ClCompile Include="arrayImp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="linkListImp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

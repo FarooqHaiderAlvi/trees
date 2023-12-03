@@ -139,7 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BinaryTree.cpp" />
+    <ClCompile Include="arrayImp.cpp" />
+    <ClCompile Include="linkListImp.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
