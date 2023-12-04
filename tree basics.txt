@@ -1,0 +1,61 @@
+
+binary tree: chat gpt link
+https://chat.openai.com/c/72bfa59c-cdc9-40d2-abde-15beeec7c895
+---------------------------------------------------
+
+height starting from zero
+so if height starts from zero then use this formula to calculate total nodes
+
+max no of nodes = (2^h+1)-1
+min no of nodes= h+1
+min height = log(n+1)-1
+max height = n-1
+
+else if height start from 1 use this formula
+max no of nodes = (2^h)-1
+min no of nodes =h
+min height of tree=log(n+1) with base 2
+max height of tree=n
+if there are n nodes then there must be n-1
+edges
+
+A tree is an acyclic graph.
+
+There are two main types of tree traversal.
+
+breath first search which is also known as
+level order traversal.
+and second is depth first search which further has three types
+lvr , lrv , vlr
+
+
+for breath first we use queue and for dfs we use stack in its three types.
+
+------------------
+
+Perfect BT:
+each node has exactly zero or two nodes.
+All leaf nodes are at the same level.
+
+---------------
+
+full binary tree:
+each node has exactly zero or two nodes 
+it is not necessary that all leaf nodes are at the same level
+
+---------------------
+Complete binary tree
+
+A complete binary tree is a binary tree in which all the levels are completely filled except possibly the lowest one, which is filled from the left.
+
+A complete binary tree is just like a full binary tree, but with two major differences
+
+All the leaf elements must lean towards the left.
+The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.
+
+-----------------------
+
+
+in binary tree linkedlist implementation we can
+make a friend class for treeNode that contain lft and 
+right pointers

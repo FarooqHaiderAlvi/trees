@@ -1,0 +1,6 @@
+﻿  arrayImp.cpp
+C:\Users\Hammad Ishtiaq\source\all_dsa\trees\BinaryTree\BinaryTree\arrayImp.cpp(12,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Hammad Ishtiaq\source\all_dsa\trees\BinaryTree\BinaryTree\arrayImp.cpp(11): message : while compiling class template member function 'TreeUsingArray<int>::TreeUsingArray(int)'
+C:\Users\Hammad Ishtiaq\source\all_dsa\trees\BinaryTree\BinaryTree\arrayImp.cpp(117): message : see reference to function template instantiation 'TreeUsingArray<int>::TreeUsingArray(int)' being compiled
+C:\Users\Hammad Ishtiaq\source\all_dsa\trees\BinaryTree\BinaryTree\arrayImp.cpp(117): message : see reference to class template instantiation 'TreeUsingArray<int>' being compiled
+  BinaryTree.vcxproj -> C:\Users\Hammad Ishtiaq\source\all_dsa\trees\BinaryTree\Debug\BinaryTree.exe
