@@ -1,6 +1,10 @@
-This is main repo and will contain 
-binary trees
-binary search trees
-traversals 
-binary tree avl
-binary tree rotations
+This is the main repo
+
+and branches order 
+
+binary_tree
+bst
+tree_traversal
+
+avl_tree
+
