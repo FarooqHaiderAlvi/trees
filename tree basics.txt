@@ -59,3 +59,18 @@ The last leaf element might not have a right sibling i.e. a complete binary tree
 in binary tree linkedlist implementation we can
 make a friend class for treeNode that contain lft and 
 right pointers
+
+-------------------------
+
+when we apply inordertraversal(lvr) on bst we get sorted values from min to max
+
+--------------------------------
+
+
+
+while deleting 
+
+
+
+
+
