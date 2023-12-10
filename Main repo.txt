@@ -3,8 +3,11 @@ This is the main repo
 and branches order 
 
 binary_tree
+
 bst
+
 tree_traversal
+(tree traversals are added only in BinarySearchTree project because don't need to add travesals in each branch or project because traversal logic don't change)
 
 avl_tree
 
