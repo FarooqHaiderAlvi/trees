@@ -139,7 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BFSiterative.cpp" />
     <ClCompile Include="BinarySearchTree.cpp" />
+    <ClCompile Include="DFSiterativeTraversals.cpp" />
+    <ClCompile Include="DFSiterativeUsingBuiltIN.cpp" />
+    <ClCompile Include="BFSBuiltIn.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
