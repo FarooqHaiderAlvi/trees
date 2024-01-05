@@ -78,5 +78,10 @@ search
 ---------------------------------------
 
 
+Heaps
 
+heaps are binary tree and complete binary tree and have heap property.
+
+and in min heap, deletions is always done from the minimum value that is root
+and in max heap deletion is always done from the highest value that is root
 
