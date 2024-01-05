@@ -7,7 +7,8 @@ binary_tree
 bst
 
 tree_traversal
-(tree traversals are added only in BinarySearchTree project because don't need to add travesals in each branch or project because traversal logic don't change)
+(tree traversals are added only in BinarySearchTree project because don't need to add travesals in each branch or project because traversals logic don't change)
 
 avl_tree
 
+heaps
