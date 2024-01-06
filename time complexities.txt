@@ -1,0 +1,28 @@
+
+Binary Search Tree
+
+OPERATION	BEST CASE	AVERAGE CASE	WORST CASE
+Insert	        O (log n)	O (log n)	O (n)
+Delete	        O (log n)	O (log n)	O (n)
+Search	        O (1)	        O (log n)	O (n)
+
+-------------------------------------------------------------------
+
+AVL TREE
+
+OPERATION	BEST CASE	AVERAGE CASE	WORST CASE
+Insert	        O (log n)	O (log n)	O (log n)
+Delete	        O (log n)	O (log n)	O (log n)
+Search	        O (1)	        O (log n)	O (log n)
+ 
+
+The time complexity of all binary tree travesals is O(n) because each node is visited in every traveral only 
+the order in which nodes are visited differs.
+
+Binary Heaps
+
+OPERATION	BEST CASE	AVERAGE CASE	WORST CASE
+Insert	        O (1)	        O (log n)	O (log n)
+Delete	        O (1)	        O (log n)	O (log n)
+Search	        O (1)	        O (n)	        O (log n)
+
