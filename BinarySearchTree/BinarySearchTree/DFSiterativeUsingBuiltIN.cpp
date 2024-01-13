@@ -1,17 +1,18 @@
 //#include <iostream>
-//using namespace std;
-//
 //#include <stack>
+//using namespace std;
 //
 //
 //template<typename t>
 //class bstNode {
 //public:
+//
 //	t data;
 //	bstNode<t>* left;
 //	bstNode<t>* right;
 //
 //	bstNode(int val) {
+//
 //		data = val;
 //		left = right = nullptr;
 //
@@ -22,9 +23,17 @@
 //class BST {
 //
 //	bstNode<t>* root;
+//
 //public:
+//
 //	BST() {
 //		root = nullptr;
+//	}
+//
+//	bstNode<t>* getRoot() {
+//		if (root) {
+//			return root;
+//		}
 //	}
 //
 //	void insert(t val) {
@@ -59,11 +68,6 @@
 //
 //
 //	}
-//	bstNode<t>* getRoot() {
-//		if (root) {
-//			return root;
-//		}
-//	}
 //
 //	void iterativePreOrder() {
 //		
@@ -96,22 +100,18 @@
 //				st.push(temp);
 //				temp = temp->left;
 //			}
-//
 //			temp = st.top();
 //			st.pop();
 //			cout << temp->data << "  ";
-//
-//			
-//				temp = temp->right;
+//            temp = temp->right;
 //
 //		}
 //	}
 //
-//
 //	void iterativePostOrder() {
 //		stack<bstNode<t>*> st;
 //		bstNode<t>* current = root;
-//		bstNode<t>* temp = root;
+//		bstNode<t>* temp = nullptr;
 //
 //		while (current) {
 //
@@ -120,7 +120,7 @@
 //				current = current->left;
 //			}
 //
-//			while (current && (!current->right || current->right == temp)) {
+//			while (current && (current->right==nullptr || current->right == temp)) {
 //
 //				cout << current->data << " ";
 //				temp = current;
@@ -128,9 +128,7 @@
 //					return;
 //				}
 //				current = st.top();
-//
 //				st.pop();
-//
 //			}
 //			st.push(current);
 //
@@ -157,7 +155,7 @@
 //	tree.insert(12);
 //	tree.insert(22);
 //	tree.insert(30);
-//
+//	tree.insert(9);
 //
 //	tree.iterativePostOrder();
 //

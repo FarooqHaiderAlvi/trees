@@ -1,8 +1,6 @@
 //#include <iostream>
-//using namespace std;
-//
 //#include <queue>
-//
+//using namespace std;
 //
 //template<typename t>
 //class bstNode {
@@ -22,9 +20,18 @@
 //class BST {
 //
 //	bstNode<t>* root;
+//
 //public:
+//
 //	BST() {
+//
 //		root = nullptr;
+//	}
+//
+//	bstNode<t>* getRoot() {
+//		if (root) {
+//			return root;
+//		}
 //	}
 //
 //	void insert(t val) {
@@ -53,54 +60,35 @@
 //			else {
 //				prev->right = new bstNode<t>(val);
 //			}
-//
-//
-//		}
-//
-//
-//	}
-//	bstNode<t>* getRoot() {
-//		if (root) {
-//			return root;
 //		}
 //	}
 //
 //	void iterativeLevelOrderTraversal() {
 //		queue<bstNode<t>*> q;
-//
 //		bstNode<t>* temp = root;
-//		bstNode<t>* curr = root;
 //
-//		if (curr) {
-//			q.push(curr);
+//		if (temp) {
+//			q.push(temp);
 //			while (!q.empty()) {
 //
 //				temp = q.front();
-//
+//				q.pop();
 //				cout << temp->data << " ";
 //
 //				if (temp->left)
 //					q.push(temp->left);
 //				if (temp->right)
 //					q.push(temp->right);
-//
-//				q.pop();
-//
-//
 //			}
 //		}
-//		
-//
-//
 //	}
 //};
 //
 //
 //int main() {
 //
-//
-//	BST<int> tree;
-//	tree.insert(20);
+//	    BST<int> tree;
+//	    tree.insert(20);
 //		tree.insert(22);
 //		tree.insert(65);
 //		tree.insert(60);
@@ -113,10 +101,6 @@
 //		tree.insert(68);
 //		tree.insert(46);
 //
-//	tree.iterativeLevelOrderTraversal();
-//
-//
-//
-//
+//	    tree.iterativeLevelOrderTraversal();
 //
 //}

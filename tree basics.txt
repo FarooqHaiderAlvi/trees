@@ -85,3 +85,10 @@ heaps are binary tree and complete binary tree and have heap property.
 and in min heap, deletions is always done from the minimum value that is root
 and in max heap deletion is always done from the highest value that is root
 
+-----------------------------------------
+
+
+avl are types of height balance tree or a technique to balance binary search tree there are many other height balance trees like red-black trees, 2-3 trees
+
+O(H)=O(n) when bst becomes right or left skewed
+
