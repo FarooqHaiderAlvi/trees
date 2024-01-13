@@ -1,0 +1,53 @@
+preOrder iterative:
+steps:
+1: first make a temp pointer equal to root
+2: check if its not empty then push it in stack
+3: now make a while loop checking if the stack is not empty pop the element and print it
+4: now first push right child and then left child
+because then left child will first pop out then the right child. 
+
+
+inOrder iterative:
+steps:
+
+1: make a temp pointer equal to root
+
+2: in while loop check if temp is not null or stack is not empty
+
+3: then in that while loop make another while loop and check if temp is not null push it into stack and make temp=temp->left
+
+4: after reaching the most left child the inner while loop will be terminated and then pop and print an element in main while loop
+
+5: make temp=temp->right to check if there are right childs of the most left node to proceed further.
+
+postOrder iterative
+steps:
+
+1: make curr pointer eqaul root and temp=nullptr
+
+2: make a while loop and check if current is not null
+
+3: then make another while inside main while loop and check if curr->lft is present then push current into stack and then make current=current->left
+
+4: then make another while loop in main while loop and check if current is present and 
+(current->right is null or current->right ==temp)
+
+5: in that loop print current data and put temp=current and check if stack is empty then return
+and then pop the element from stack and make it equal to current
+
+6: in main loop push curr into stack and check if current->right is present then make it equal to current 
+
+-----------------------------------------
+
+BFS traversal iterative:
+
+1: first make a temp pointer equal to root
+2: check if its not empty then push it in queue
+3: now make a while loop checking if the queue is not empty pop the element and print it
+4: now first push left child and then right child
+into the queues
+
+
+
+
+
