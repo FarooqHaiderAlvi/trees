@@ -1,3 +1,6 @@
-﻿  Source.cpp
-C:\Users\Hammad Ishtiaq\source\all_dsa\trees\avlTrees\avlTrees\Source.cpp(39): warning C4715: 'BST<int>::getRoot': not all control paths return a value
+﻿  avlUsingRecursion.cpp
+  avlUsingStack.cpp
+  Generating Code...
+C:\Users\Hammad Ishtiaq\source\all_dsa\trees\avlTrees\avlTrees\avlUsingStack.cpp(39): warning C4715: 'BST<int>::getRoot': not all control paths return a value
+  LINK : C:\Users\Hammad Ishtiaq\source\all_dsa\trees\avlTrees\Debug\avlTrees.exe not found or not built by the last incremental link; performing full link
   avlTrees.vcxproj -> C:\Users\Hammad Ishtiaq\source\all_dsa\trees\avlTrees\Debug\avlTrees.exe

@@ -45,9 +45,28 @@ BFS traversal iterative:
 2: check if its not empty then push it in queue
 3: now make a while loop checking if the queue is not empty pop the element and print it
 4: now first push left child and then right child
-into the queues
+into the queue.
 
+------------------------------------------
+rotations:::::
 
+RR:
+only one left rotation
+RL:
+first right rotation
+then left rotation
+LL:
+only one right rotation
+LR:
+onle left rotation
+then right rotation
 
+---------------------------
+suppose A,B,C are the three nodes to be marked
+in left rotation:::
+The left child of B becomes the right child of 
+A
 
+in right rotation:::
+The right child of B becomes the left child of A.
 

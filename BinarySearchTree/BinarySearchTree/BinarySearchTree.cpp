@@ -269,8 +269,10 @@ int main() {
 	tree.insert(70);
 	tree.insert(68);
 	tree.insert(46);
+	tree.insert(66);
+	tree.insert(67);
 
-	tree.deletion(70);
+	tree.deletion(20);
 	tree.preOrderTraversal(tree.getRoot());
 
 	

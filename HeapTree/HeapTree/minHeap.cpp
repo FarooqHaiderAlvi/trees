@@ -7,7 +7,7 @@ class MinHeap {
     int size;
     int index;
 public:
-
+    
     MinHeap() {
         size = 4;
         index = 0;
@@ -16,6 +16,7 @@ public:
             array[i] = 0;
         }
     }
+
     bool isFull() {
         return size == index;
     }
@@ -33,6 +34,7 @@ public:
         array = temp;
 
     }
+
     void swap(int& a, int& b) {
         if (a != b) {
             a = a + b;
@@ -40,6 +42,7 @@ public:
             a = a - b;
         }
     }
+
     int getLeftChildIndex(int i) {
 
         int child = (i * 2) + 1;
@@ -93,12 +96,23 @@ public:
 
             i = parentIndex;
 
-
         }
 
 
     }
    
+    bool isEmpty() {
+        return index == 0;
+    }
+
+    void print()
+    {
+        for (int i = 0; i < index; i++)
+        {
+            cout << array[i] << endl;
+        }
+    }
+
     void deleteKey() {
 
         
@@ -130,22 +144,11 @@ public:
                 else {
                     break;
                 }
-                   
+                
             }
         }
     }
 
-   
-    bool isEmpty() {
-        return index == 0;
-    }
-    void print() 
-    {
-        for (int i = 0; i < index; i++)
-        { 
-            cout << array[i] << endl;
-        }
-    }
 };
 
 int main()

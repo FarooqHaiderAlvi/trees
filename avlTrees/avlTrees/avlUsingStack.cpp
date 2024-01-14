@@ -19,28 +19,57 @@ public:
 
 template<typename t>
 class BST {
-
 	bstNode<t>* root;
+
 public:
 	BST() {
 		root = nullptr;
 	}
 
-	int getHeight(bstNode<t>* N)
-{
+	int getHeight(bstNode<t>* N){
 	if (N == NULL)
 		return 0;
 	return N->height;
-}
+      }
+
 	bstNode<t>* getRoot() {
 		if (root) {
 			return root;
 		}
 	}
+
     int max(int a, int b)
 {
 	return (a > b) ? a : b;
 }
+
+	bstNode<t>* search(t val) {
+
+		bstNode<t>* temp = root;
+		while (temp) {
+
+			if (temp->data == val) {
+				return temp;
+			}
+			else if (temp->data > val) {
+				temp = temp->left;
+			}
+			else {
+				temp = temp->right;
+			}
+		}
+		return NULL;
+	}
+
+	void preOrderTraversal(bstNode<t>* temp) {
+
+		if (!temp)
+			return;
+		cout << temp->data << " " << temp->height << endl;
+		preOrderTraversal(temp->left);
+		preOrderTraversal(temp->right);
+
+	}
 
 	void insert(t val) {
 		stack<bstNode<t>*> st;
@@ -162,26 +191,18 @@ public:
 			delete nodePtr;
 		}
 		// Case 2: Node has only a left child
-		else if (nodePtr->left != nullptr && nodePtr->right == nullptr) {
-			tempNodePtr = nodePtr->left;
+		else if ((nodePtr->left != nullptr) != (nodePtr->right != nullptr)) {
+
+			if (nodePtr->left)
+				tempNodePtr = nodePtr->left;
+			else
+				tempNodePtr = nodePtr->right;
+			
 			if (parent == nullptr) {
 				root = tempNodePtr;
 			}
-			else if (parent->left == nodePtr) {
-				parent->left = tempNodePtr;
-			}
-			else {
-				parent->right = tempNodePtr;
-			}
-			delete nodePtr;
-		}
-		// Case 3: Node has only a right child
-		else if (nodePtr->left == nullptr && nodePtr->right != nullptr) {
-			tempNodePtr = nodePtr->right;
-			if (parent == nullptr) {
-				root = tempNodePtr;
-			}
-			else if (parent->left == nodePtr) {
+
+			if (parent->left == nodePtr) {
 				parent->left = tempNodePtr;
 			}
 			else {
@@ -248,10 +269,6 @@ public:
 		}
 	}
 
-
-
-
-
 	void leftRotate(bstNode<t>* x) {
 
 		bstNode<t>* temp = root;
@@ -299,6 +316,7 @@ public:
 			root = y;
 
 	}
+
 	void rightRotate(bstNode<t>* y)
 {
 		bstNode<t>* temp = root;
@@ -346,37 +364,6 @@ public:
 		root = x;
 }
 
-
-
-
-
-	bstNode<t>* search(t val) {
-
-		bstNode<t>* temp = root;
-		while (temp) {
-
-			if (temp->data == val) {
-				return temp;
-			}
-			else if (temp->data > val) {
-				temp = temp->left;
-			}
-			else {
-				temp = temp->right;
-			}
-		}
-		return NULL;
-	}
-    void preOrderTraversal(bstNode<t>* temp) {
-
-		if (!temp)
-			return;
-		cout << temp->data << " " << temp->height << endl;
-		preOrderTraversal(temp->left);
-		preOrderTraversal(temp->right);
-
-	}
-
 };
 
 
@@ -402,9 +389,7 @@ int main() {
 	tree.insert(46);*/
 
 
-
-
-	tree.insert( 7);
+	/*tree.insert( 7);
 	 tree.insert( 14);
 	 tree.insert( 2);
 	 tree.insert( 5);
@@ -415,8 +400,10 @@ int main() {
 	 tree.insert( 15);
 	 tree.insert( 25);
 	 tree.insert( 66);
-	tree.insert( 70);
-	 tree.insert( 4);
+	 tree.insert( 70);
+	 tree.insert( 4);*/
+	
+	
 	
 	tree.preOrderTraversal(tree.getRoot());
 
